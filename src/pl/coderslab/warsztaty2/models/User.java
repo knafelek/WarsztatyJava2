@@ -16,7 +16,7 @@ public class User {
     }
     public User(String username, String password, String email){
         this.username=username;
-        setPassword(password); // wywołanie settera bo w setterze już jest już zahashowane
+        this.setPassword(password); // wywołanie settera bo w setterze już jest już zahashowane //dodano this.
         this.email=email;
     }
 
@@ -68,7 +68,7 @@ public class User {
     }
 
     public static User[]loadAllUsers(Connection conn) throws SQLException{ // KOLEKCJE
-        ArrayList<User>users = new ArrayList<User>();                            // !!!!!!!!!!!!!!!!!!!!!!!!!!
+        ArrayList<User>users = new ArrayList<User>();
         String query = "select * from user";
         PreparedStatement pd = conn.prepareStatement(query);
 
