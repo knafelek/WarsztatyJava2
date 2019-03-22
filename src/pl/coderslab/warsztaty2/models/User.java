@@ -101,6 +101,11 @@ public class User {
 
     //-------------------------------------------------------------------------
 
+    /* Utwórz implementację dodatkowych metod realizujących zadania:
+        pobranie wszystkich członków danej grupy (dopisz metodę loadAllByGroupId do klasy User).
+    */
+
+    //-------------------------------------------------------------------------
     public int getId() {
         return id;
     }

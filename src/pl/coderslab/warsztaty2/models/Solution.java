@@ -110,6 +110,18 @@ public class Solution {
 
     //-----------------------------------------------------------------------------------------------------
 
+
+
+   /* Utwórz implementację dodatkowych metod realizujących zadania:
+
+    - pobranie wszystkich rozwiązań danego użytkownika (dopisz metodę loadAllByUserId do klasy Solution),
+    - pobranie wszystkich rozwiązań danego zadania, posortowanych od najnowszego do najstarszego (dopisz metodę
+      loadAllByExerciseId do klasy Solution)*/
+
+
+
+    //-----------------------------------------------------------------------------------------------------
+
     public String getCreated() {
         return created;
     }
