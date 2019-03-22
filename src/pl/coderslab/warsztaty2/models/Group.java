@@ -38,10 +38,10 @@ public class Group{
         }
     }
 
-    public static Group loadGroupById (Connection conn, int id) throws SQLException { // Funkcja zwracająca użytkownika
+    public static Group loadGroupById (Connection conn, int id) throws SQLException {
 
         String query = "select * from user_group where id=?";
-        PreparedStatement ps = conn.prepareStatement(query);//przypisanie do zmiennej //alt+ENTER automatyczne przypisanie do zmienenj
+        PreparedStatement ps = conn.prepareStatement(query);
         ps.setInt(1, id);
 
         ResultSet resultSet = ps.executeQuery();
@@ -54,7 +54,7 @@ public class Group{
         return null; //jeżeli coś nie zadziała to trzeba zwrócić nulla
     }
 
-    public static Group[]loadAllGroups(Connection conn) throws SQLException{ // KOLEKCJE
+    public static Group[]loadAllGroups(Connection conn) throws SQLException{
         ArrayList<Group> groups = new ArrayList<Group>();
         String query = "select * from user_group";
         PreparedStatement pd = conn.prepareStatement(query);
@@ -78,7 +78,7 @@ public class Group{
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setInt(1, this.id);
             preparedStatement.executeUpdate();
-            this.id = 0; // po usunięciu użytkownika aktualizujemy jego id na == 0 żeby było wiadomo ze go tam już nie ma - synchronizacja z bazą danych
+            this.id = 0; // po usunięciu id na == 0 - synchronizacja z bazą danych
         }
     }
 

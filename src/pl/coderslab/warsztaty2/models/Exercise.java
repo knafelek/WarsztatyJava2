@@ -22,7 +22,7 @@ public class Exercise {
 
     //-------------------------------------------------------------------------
 
-    public void  saveToDB(Connection conn) throws SQLException { // Metoda zapisująca do bazy danych  // Początkowa byłą w try catchu ale przeniesiono połączenie z bazą danych do innej metody w Klasie App
+    public void  saveToDB(Connection conn) throws SQLException { // Metoda zapisująca do bazy danych
 
         if(this.id==0) { // Jeżeli obiekt nie został jeszcze zapisany do bazy danych to:
             String query = "insert into exercise (title, description) values (?,?)";
@@ -45,10 +45,10 @@ public class Exercise {
         }
     }
 
-    public static Exercise loadExerciseById (Connection conn, int id) throws SQLException { // Funkcja zwracająca użytkownika
+    public static Exercise loadExerciseById (Connection conn, int id) throws SQLException {
 
         String query = "select * from exercise where id=?";
-        PreparedStatement ps = conn.prepareStatement(query);//przypisanie do zmiennej //alt+ENTER automatyczne przypisanie do zmienenj
+        PreparedStatement ps = conn.prepareStatement(query);
         ps.setInt(1, id);
 
         ResultSet resultSet = ps.executeQuery();
