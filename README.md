@@ -27,7 +27,7 @@ Dla każdej z niżej wymienionych klas możliwe są następujące operacje:
 - pobieranie wszystkich członków danej grupy
 ---    
 ## Weryfikacja działania
-#####Program 1 – zarządzanie użytkownikami
+#### Program 1 – zarządzanie użytkownikami
 Program po uruchomieniu wyświetla na konsoli listę wszystkich użytkowników. 
 Następnie wyświetla:
 
@@ -40,7 +40,7 @@ Następnie wyświetla:
 Po wykonaniu dowolnej z opcji, program ponownie wyświetla 
 listę danych i zadaje pytanie o wybór opcji
 
-#####Program 2 – zarządzanie zadaniami
+#### Program 2 – zarządzanie zadaniami
 Program po uruchomieniu wyświetla na konsoli listę wszystkich zadań. 
 Następnie wyświetla:
 
@@ -53,7 +53,7 @@ Następnie wyświetla:
 Po wykonaniu dowolnej z opcji, program ponownie wyświetla
 listę danych i zadaje pytanie o wybór opcji.
 
-#####Program 3 – zarządzanie grupami
+#### Program 3 – zarządzanie grupami
 Program po uruchomieniu wyświetla na konsoli listę wszystkich grup. 
 Następnie wyświetla:
 
@@ -63,7 +63,7 @@ Następnie wyświetla:
     delete – edycja grupy,
     quit – zakończenie programu
 
-#####Program 4 – przypisywanie zadań
+#### Program 4 – przypisywanie zadań
 Program po uruchomieniu wyświetla w konsoli napis:
 
     Wybierz jedną z opcji:
