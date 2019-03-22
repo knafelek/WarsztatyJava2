@@ -8,17 +8,26 @@ Dla każdej z niżej wymienionych klas możliwe są następujące operacje:
 - wczytywanie danej na podstawie podanego id
 - kasowanie danych
 - zapisywanie nowych danych do bazy
-####1. Użytkownicy
+
+#### 1. Użytkownicy
+
     Użytkownik jest identyfikowany po emailu.
-####2. Grupy
+    
+#### 2. Grupy
+
     Użytkownik przynależy tylko do jednej grupy. Grupa może mieć wielu użytkowników.
-####3. Zadanie
+
+#### 3. Zadanie
+
     Zadanie do rozwiązania – może mieć więcej niż jedno rozwiązanie.
-####4. Rozwiązanie zadania
+    
+#### 4. Rozwiązanie zadania
+
     Musi zawierać informacje:
     - jakiego zadania dotyczy,
     - kiedy zostało dodane,
     - który użytkownik dodał rozwiązanie.
+    
 ---    
 ## Dodatkowe funkcjonalności:
 - pobieranie wszystkich rozwiązań danego użytkownika
